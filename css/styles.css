@@ -8,7 +8,7 @@
 --primary-text-color: #757575;
 --title-text-color: #212121;
 --primary-white-color: #fff;
---secondary-btn-color: #EEEEEE;
+--secondary-btn-color: #F5F4FA;
 --secondary-bg-color: #f5f4fa;
 
 }
@@ -32,11 +32,35 @@ margin: -1px;
 .list{
 list-style: none;
 }
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.conteiner{
+    outline: 2px solid tomato;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+section{
+    /* background-color: aqua; */
+padding-top: 94px;
+padding-bottom: 94px;
+}
 /* Header */
 header {
 background-color: var(--primary-white-color);
+border: 1px solid #ececec;
 }
 .logo {
+display: inline-block;
 color: var(--accent-color);
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
@@ -81,9 +105,13 @@ color: var(--accent-color);
 }
 /* Hero Section */
 .hero {
+padding-top: 200px;
+padding-bottom: 200px;
+text-align: center;
 background-color: var(--title-bg-color);
 }
 .hero-title {
+    margin-bottom: 30px;
 color: var(--primary-white-color);
 font-weight: 900;
 font-size: 44px;
@@ -92,14 +120,19 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 }
 .hero-btn {
+padding: 10px 32px;
+min-width: 216px;
 font-family: inherit;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.06em;
-background-color: #2196f3;
+text-align: center;
+background-color: var(--accent-color);
 color: var(--primary-white-color);
 cursor: pointer;
+border: 1px solid transparent;
+border-radius: 4px;
 }
 .hero-btn:hover {
 background: #188CE8;
@@ -113,6 +146,7 @@ border-radius: 4px;
 }
 /* Features */
 .features-subtitle{
+margin-bottom: 10px;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -127,7 +161,11 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 }
 /* Work */
+.work{
+    padding-top: 0;
+}
 .work-title{
+margin-bottom: 50px;
 font-size: 36px;
 line-height: 1.16;
 letter-spacing: 0.03em;
@@ -138,18 +176,22 @@ letter-spacing: 0.03em;
 background-color: var(--secondary-bg-color);
 }
 .team-title{
+margin-bottom: 50px;
 font-size: 36px;
 line-height: 1.16;
 letter-spacing: 0.03em;
 }
 .team-card{
 background-color: var(--primary-white-color);
+width: 270px;
 }
 .team-subtitle{
+margin-bottom: 10px;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
+text-align: center;
 }
 .team-text{
 color: var(--primary-text-color);
@@ -157,15 +199,22 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
+text-align: center;
+}
+.cards-studio{
+padding-top: 30px;
+padding-bottom: 30px;
 }
 /* Footer */
 footer {
 background-color: var(--title-bg-color);
+padding: 60px 0;
 }
 .logo-accent-footer {
 color: var(--primary-white-color);
 }
 .link-address {
+display: inline-block;
 color: var(--primary-white-color);
 font-style: normal;
 font-weight: 400;
@@ -175,6 +224,7 @@ letter-spacing: 0.03em;
 text-decoration: none;
 }
 .link-info-footer{
+display: inline-block;
 color: rgba(255, 255, 255, 0.6);
 font-weight: 500;
 font-style: normal;
@@ -189,9 +239,15 @@ color: var(--accent-color);
 .link-info-footer:focus{
 color: var(--accent-color);
 }
-
+footer .logo{
+margin-bottom: 20px;
+}
+.list-item:not(:last-child){
+margin-bottom: 9px;
+}
 /* Portfolio */
 .btn-nav{
+padding: 6px 22px;
 color: var(--title-text-color);
 background-color: var(--secondary-btn-color);
 font-family: inherit;
@@ -199,6 +255,9 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
 letter-spacing: 0.03em;
+text-align: center;
+border: none;
+border-radius: 4px;
 }
 .btn-nav:hover{
 background-color: var(--accent-color);
@@ -212,6 +271,7 @@ color: var(--primary-white-color);
 text-decoration: none;
 }
 .project-title{
+margin-bottom: 4px;
 color: var(--title-text-color);
 font-size: 18px;
 line-height: 2;
@@ -223,4 +283,12 @@ font-weight: 400;
 font-size: 16px;
 line-height: 30px;
 letter-spacing: 0.03em;
+}
+.project-card{
+width: 370px;
+border: 1px solid #EEEEEE;
+}
+.card-portfolio{
+padding-top: 20px;
+padding-bottom: 20px;
 }
